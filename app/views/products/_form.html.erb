@@ -1,0 +1,12 @@
+<%= form_for(@product) do |f| %>
+    <%= f.label :title, "產品名稱" %>
+    <%= f.text_field :title %> <br />
+
+    <%= f.label :description, "產品描述" %>
+    <%= f.text_area :description %> <br />
+
+    <%= f.label :price, "產品價格" %>
+    <%= f.text_field :price %> <br />
+
+    <%= f.submit %>
+<% end %>
